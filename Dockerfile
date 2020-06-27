@@ -9,7 +9,7 @@ ADD Gemfile.lock /automacao_api/Gemfile.lock
 RUN bundle install
 
 #RUN mkdir reports
-RUN cucumber --format json -o cucumber.json
+RUN cucumber --format json -o cucumber.json || true
 
 RUN echo 'vendo arquivos gerados'
 RUN ls
